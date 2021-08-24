@@ -57,7 +57,7 @@ v
                 <Button
                     style={themeStyles.button}
                     textStyle={themeStyles.buttonText}
-                    title="Try Me!"
+                    title="Try Me!!!"
                     className="focusable"
                     onPress={() => {
                         setBgColor(bgColor === '#666666' ? Theme.color1 : '#666666');

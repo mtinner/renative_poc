@@ -5,11 +5,9 @@ import { StyleSheet, StatusBar } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { CastButton } from 'react-native-google-cast';
 import { getScaledValue } from 'renative';
 import ScreenHome from '../components/screenHome';
 import ScreenMyPage from '../components/screenMyPage';
-import ScreenModal from '../components/screenModal';
 import Menu, { DrawerButton } from '../components/menu';
 import Theme from '../config';
 
@@ -55,7 +53,6 @@ const StackNavigator = ({ navigation }) => (
 const ModalNavigator = () => (
     <ModalStack.Navigator headerMode="none" mode="modal">
         <ModalStack.Screen name="stack" component={StackNavigator} />
-        <ModalStack.Screen name="modal" component={ScreenModal} />
     </ModalStack.Navigator>
 );
 
